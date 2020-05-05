@@ -1,0 +1,56 @@
+* {
+    -webkit-user-select: none;
+    box-sizing: content-box;
+}
+body {
+    font-family: "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+}
+.flex-items {
+    flex: 1;
+    height: 100vh;
+    background-color: khaki;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 0px auto;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    color: rgba(0,0,0,0.3);
+    font-size: 2em;
+    -webkit-user-select: none;
+}
+
+.cell--occupied {
+    color: rgba(0,0,0,1);
+    font-size: 3em;
+}
+
+.game--timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;
+    color: lime;
+    background-color: #000;
+    width: 300px;
+    margin: 10px auto;
+}
+
+.game--timer--red {
+    color: red;
+}
+
+.game--timer.game--timer--idle {
+    background-color: khaki;
+}

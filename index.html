@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-items">
+        <select name="" id="duration">
+            <option value="10" title="10 seconds" selected>Level 1</option>
+            <option value="7" title="7 seconds">Level 2</option>
+            <option value="4" title="4 seconds">Level 3</option>
+        </select>
+        <h2 class="game--timer game--timer--idle">&nbsp;</h2>
+        <h2 class="game--status"></h2>
+        <div class="game--container">
+            <div data-cell-index="0"id="_1" class="cell">1</div>
+            <div data-cell-index="1"id="_2" class="cell">2</div>
+            <div data-cell-index="2"id="_3" class="cell">3</div>
+            <div data-cell-index="3"id="_4" class="cell">4</div>
+            <div data-cell-index="4"id="_5" class="cell">5</div>
+            <div data-cell-index="5"id="_6" class="cell">6</div>
+            <div data-cell-index="6"id="_7" class="cell">7</div>
+            <div data-cell-index="7"id="_8" class="cell">8</div>
+            <div data-cell-index="8"id="_9" class="cell">9</div>
+        </div>
+        <h1 class="game--title">Tic Tac Toe</h1>
+        <button class="game--restart">Restart Game</button>
+    </div>
+    <div class="flex-items">
+        <iframe src="https://challonge.com/lnukutttc/module" width="100%" height="100%" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+    <audio src="./sounds/time-running-out.wav" id="time-running-out"></audio>
+    <audio src="./sounds/winner.mp3" id="winner"></audio>
+    <audio src="./sounds/draw.mp3" id="draw"></audio>
+    <audio src="./sounds/xTurn.mp3" id="xTurn"></audio>
+    <audio src="./sounds/oTurn.mp3" id="oTurn"></audio>
+    <audio src="./sounds/restart.mp3" id="restart"></audio>
+<script src="script.js"></script>
+</body>
+</html>
